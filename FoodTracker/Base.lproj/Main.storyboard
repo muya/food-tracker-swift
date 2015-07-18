@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What did you eat today?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0d-Ik-zXm">
@@ -45,9 +45,13 @@
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="402-ed-mkL">
                                         <rect key="frame" x="0.0" y="117" width="320" height="320"/>
                                         <animations/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="402-ed-mkL" secondAttribute="height" multiplier="1:1" id="VQh-tF-uwr"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="w7h-cy-YT9" appends="YES" id="2DI-sk-rZ8"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <animations/>
@@ -71,9 +75,16 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="FLy-vO-0py" id="i3q-w8-pXy"/>
                         <outlet property="nameTextField" destination="I0d-Ik-zXm" id="H3o-Ua-4pt"/>
+                        <outlet property="photoImageView" destination="402-ed-mkL" id="nRq-PO-scf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="w7h-cy-YT9">
+                    <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="8Pd-aj-m7f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="315"/>
         </scene>

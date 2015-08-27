@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate,
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     let DEFAULT_MEAL_LABEL_TEXT = "Your Meal"
     
@@ -87,11 +88,6 @@ class ViewController: UIViewController, UITextFieldDelegate,
         
         // present the image picker
         presentViewController(imagePickerController, animated: true, completion: nil)
-        
-    }
-    
-    @IBAction func setDefaultLabelText(sender: UIButton) {
-        mealNameLabel.text = DEFAULT_MEAL_LABEL_TEXT
     }
     
 }

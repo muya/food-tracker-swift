@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3CA1251B79B9F700307766 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CA1241B79B9F600307766 /* RatingControl.swift */; };
 		EE46EACB1B54C57200069D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46EACA1B54C57200069D39 /* AppDelegate.swift */; };
 		EE46EACD1B54C57200069D39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46EACC1B54C57200069D39 /* ViewController.swift */; };
 		EE46EAD01B54C57200069D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE46EACE1B54C57200069D39 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE3CA1241B79B9F600307766 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		EE46EAC71B54C57200069D39 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE46EACA1B54C57200069D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE46EACC1B54C57200069D39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				EE46EACA1B54C57200069D39 /* AppDelegate.swift */,
 				EE46EACC1B54C57200069D39 /* ViewController.swift */,
+				EE3CA1241B79B9F600307766 /* RatingControl.swift */,
 				EE46EACE1B54C57200069D39 /* Main.storyboard */,
 				EE46EAD11B54C57200069D39 /* Assets.xcassets */,
 				EE46EAD31B54C57200069D39 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE46EACD1B54C57200069D39 /* ViewController.swift in Sources */,
+				EE3CA1251B79B9F700307766 /* RatingControl.swift in Sources */,
 				EE46EACB1B54C57200069D39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +402,7 @@
 				EE46EAE61B54C57300069D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE46EAE71B54C57300069D39 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +411,7 @@
 				EE46EAE91B54C57300069D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

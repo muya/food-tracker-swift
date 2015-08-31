@@ -16,8 +16,8 @@ class RatingControl: UIView {
         }
     }
     var ratingButtons = [UIButton]()
-    var spacing = 5
-    var stars = 5
+    var spacing: Int = 5
+    var stars: Int = 5
 
     // MARK: Initialization
     required init?(coder aDecoder: NSCoder) {
@@ -27,6 +27,7 @@ class RatingControl: UIView {
         let filledStarImage = UIImage(named: "filledStar")
         let emptyStarImage = UIImage(named: "emptyStar")
         for _ in 0..<stars {
+            print("About to add buttons")
             let button = UIButton()
             
             button.setImage(emptyStarImage, forState: .Normal)
@@ -36,12 +37,14 @@ class RatingControl: UIView {
             button.adjustsImageWhenHighlighted = false
             
             button.addTarget(self, action: "ratingButtonTapped:", forControlEvents: .TouchDown)
+            ratingButtons += [button]
             addSubview(button)
-            ratingButtons.append(button)
+            print("Finished adding buttons")
         }
        
     }
     override func layoutSubviews() {
+        print("layoutSubviews called!")
         let buttonSize = Int(frame.size.height)
         
         var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)

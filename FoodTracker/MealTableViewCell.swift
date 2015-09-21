@@ -2,14 +2,16 @@
 //  MealTableViewCell.swift
 //  FoodTracker
 //
-//  Created by Muya on 27/08/2015.
-//  Copyright © 2015 muya. All rights reserved.
+//  Created by Jane Appleseed on 5/27/15.
+//  Copyright © 2015 Apple Inc. All rights reserved.
+//  See LICENSE.txt for this sample’s licensing information.
 //
 
 import UIKit
 
 class MealTableViewCell: UITableViewCell {
     // MARK: Properties
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
